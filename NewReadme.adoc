@@ -21,24 +21,8 @@ TIP: Meine Videos kann man auch auf 1.5 oder 2-facher Geschwindigkeit noch gut a
 
 Schauen Sie sich das https://youtu.be/ad_540wfkrs[Begrüßungsvideo] und das Video zu den https://youtu.be/k6fRU8MY-cg[Lernzielen] der Veranstaltung an. 
 
-Wen Sie es noch nicht gesehen haben, schauen Sie sich das https://youtu.be/X583zc8e0b0[Organisationsvideo] an und lesen Sie das https://github.com/hhu-propra1/Organisation/blob/main/organisatorisches.adoc[Organisationsdokument].
-
 *Leitfragen/Aufgaben:*
 
 * Wann findet die Klausur statt?
 * Wie viele der praktischen Übung müssen Sie erfolgreich absolvieren, um die Klausur mitschreiben zu dürfen?
 * Welche Teile der Wochenblätter, Übungen und praktischen Übungen sind Bestandteil der Klausur?
-* Wie ist die Mailadresse, an die Sie sich wenden können, wenn Sie wegen einer Krankheit nicht an einer praktischen Übung teilnehmen können?
-* Wie bekommen Sie Hilfe zu fachlichen Themen?
-* Welche Deadlines gibt es?
-
-*Zusatzmaterial:*
-
-Falls Sie wissen wollen, wie Sie Ihren Lernerfolg optimieren können oder Probleme mit Prokrastination haben, sind hier zwei Videos, die vielleicht etwas Hilfestellung geben können:
-
-* Video zum Thema https://www.youtube.com/watch?v=idEKH9O5xWs[gehirngerechtes Arbeiten]
-* TED Talk von Tim Urban über https://youtu.be/arj7oStGLkU[Prokrastination] 
-
-*SEAcon:*
-
-Am 21. und 22.04.2021 findet die https://www.sea-con.de/seacon2021.html[SEAcon] Onlinekonferenz zum Thema Software-Engineering und Architektur statt. Viele der Themen passen ganz gut zu den Inhalten der Veranstaltungen des Programmierpraktikums. Wenn Sie Lust haben, sich das einmal anzuschauen, können Sie mit dem Code `SEACONdigi-Studis` dort kostenlos teilnehmen. Wählen Sie die "reguläre Teilnahme" aus und geben Sie den Code in dem Feld "SEACON digital Vorteilscode" ein. Sobald Sie das Eingabefeld für den Code verlassen, sollte dort stehen "Dieser Vorteilscode gewährt Ihnen einen Rabatt von 100% auf den regulären Ticketpreis."
