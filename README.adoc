@@ -1,5 +1,17 @@
 =Machen wa mal was mit Überschrifften
 
+:icons: font
+:icon-set: fa
+:source-highlighter: rouge
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+:experimental:
+
 ==Hier ist der erste Abschnitt:
 
 Im ersten Abschnitt steht nicht viel, da mit leider nicht viel einfällt
