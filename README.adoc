@@ -1,5 +1,4 @@
 =Machen wa mal was mit Überschrifften
-
 :icons: font
 :icon-set: fa
 :source-highlighter: rouge
