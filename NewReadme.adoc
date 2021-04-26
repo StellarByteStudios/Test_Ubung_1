@@ -1,0 +1,388 @@
+= Professionelle Softwareentwicklung: Woche 1 
+:icons: font
+:icon-set: fa
+:source-highlighter: rouge
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+:experimental:
+
+== Hinweise zu Lernvideos
+
+Auch wenn es verführerisch sein mag, die Videos sind nicht gedacht um nebenher beim Kochen konsumiert zu werden. Sie sollten sich unbedingt die Zeit nehmen, die Inhalte genau nachzuvollziehen und aktiv zu erarbeiten. Um Ihnen bei der Bearbeitung zu helfen, gibt es zu jedem Video Fragen und Aufgaben, die Sie beantworten bzw. bearbeiten sollen. Diese Fragen und Aufgaben sind nur ein Startpunkt. Es ist wichtig, dass Sie sich aktiv mit den Inhalten auseinandersetzen. 
+
+TIP: Meine Videos kann man auch auf 1.5 oder 2-facher Geschwindigkeit noch gut anschauen.
+
+== Aufgabe 1: Begrüßung und Organisatorisches 
+
+Schauen Sie sich das https://youtu.be/ad_540wfkrs[Begrüßungsvideo] und das Video zu den https://youtu.be/k6fRU8MY-cg[Lernzielen] der Veranstaltung an. 
+
+Wen Sie es noch nicht gesehen haben, schauen Sie sich das https://youtu.be/X583zc8e0b0[Organisationsvideo] an und lesen Sie das https://github.com/hhu-propra1/Organisation/blob/main/organisatorisches.adoc[Organisationsdokument].
+
+*Leitfragen/Aufgaben:*
+
+* Wann findet die Klausur statt?
+* Wie viele der praktischen Übung müssen Sie erfolgreich absolvieren, um die Klausur mitschreiben zu dürfen?
+* Welche Teile der Wochenblätter, Übungen und praktischen Übungen sind Bestandteil der Klausur?
+* Wie ist die Mailadresse, an die Sie sich wenden können, wenn Sie wegen einer Krankheit nicht an einer praktischen Übung teilnehmen können?
+* Wie bekommen Sie Hilfe zu fachlichen Themen?
+* Welche Deadlines gibt es?
+
+*Zusatzmaterial:*
+
+Falls Sie wissen wollen, wie Sie Ihren Lernerfolg optimieren können oder Probleme mit Prokrastination haben, sind hier zwei Videos, die vielleicht etwas Hilfestellung geben können:
+
+* Video zum Thema https://www.youtube.com/watch?v=idEKH9O5xWs[gehirngerechtes Arbeiten]
+* TED Talk von Tim Urban über https://youtu.be/arj7oStGLkU[Prokrastination] 
+
+*SEAcon:*
+
+Am 21. und 22.04.2021 findet die https://www.sea-con.de/seacon2021.html[SEAcon] Onlinekonferenz zum Thema Software-Engineering und Architektur statt. Viele der Themen passen ganz gut zu den Inhalten der Veranstaltungen des Programmierpraktikums. Wenn Sie Lust haben, sich das einmal anzuschauen, können Sie mit dem Code `SEACONdigi-Studis` dort kostenlos teilnehmen. Wählen Sie die "reguläre Teilnahme" aus und geben Sie den Code in dem Feld "SEACON digital Vorteilscode" ein. Sobald Sie das Eingabefeld für den Code verlassen, sollte dort stehen "Dieser Vorteilscode gewährt Ihnen einen Rabatt von 100% auf den regulären Ticketpreis."
+
+
+
+== Aufgabe 2: Was ist eigentlich das Problem?
+
+Im Praktikum werden wir uns mit der Fragestellung befassen, wie wir Software entwickeln, wenn ein sehr kleines Programm nicht mehr ausreicht und die Problemstellung komplex ist. 
+
+Schauen Sie sich dazu dieses Video zum Thema https://youtu.be/ON276AlEGLM[Probleme der Softwareentwicklung] an. 
+
+Ein wesentlicher Aspekt bei großen Systemen ist die Wartbarkeit. Wartbarkeit ist eines der Qualitätsziele (in der Literatur oft auch als nichtfunktionale Anforderungen bezeichnet), die in der ISO 25010 beschrieben werden. 
+
+* Schauen Sie sich das Video zu https://youtu.be/pqsTCUZVTa0[Qualitätszielen in der ISO 25010] an. 
+
+* Lesen Sie die sehr kurzen https://iso25000.com/index.php/en/iso-25000-standards/iso-25010?start=0[Definitionen] der einzelnen Begriffe durch.
+
+* Lesen Sie die Seiten 56 bis 60 aus https://katalog.ulb.hhu.de/Record/002508972[Effektive Software-Architekturen: Ein praktischer Leitfaden] von Gernot Starke. Da das Buch von Starke von 2011 ist, bezieht es sich überwiegend auf die Norm ISO 9126, die ein Vorgänger von ISO 25010 ist. Die Unterschiede zwischen den beiden Normen sind relativ klein. Beispielsweise wurde das Thema Sicherheit, das in ISO 9126 ein Unterpunkt der Funktionalität ist, in der ISO 25010 zu einem eigenen Hauptpunkt mit Unterpunkten hochgestuft.  
++
+NOTE: Sie müssen im VPN der Universität sein, um auf das Buch zugreifen zu können. Die Einrichtung des VPN ist unter https://wiki.hhu.de/display/OPENVPN/OpenVPN[https://wiki.hhu.de/display/OPENVPN/OpenVPN] beschrieben. 
+
+
+*Leitfragen/Aufgaben:*
+
+* Was ist der Zusammenhang zwischen Größe eines Softwareprojektes und der Erfolgsrate bei der Umsetzung? Wie können wir die Erfolgschancen verbessern?
+
+* Die Einführung einer Software kann einen Effekt haben, der sich auf Arbeitsabläufe auswirkt, die dann wieder einen Effekt auf die Anforderungen an die Software haben. Überlegen Sie sich, wie Sie die Softwareentwicklung gestalten könnten, um diesen dynamischen Prozess nicht zu behindern oder vielleicht sogar positiv zu unterstützen.  
+
+* Wir haben gesehen, dass sich Fehler oft am Anfang der Entwicklung einschleichen und erst spät bemerkt werden. Überlegen Sie sich, wie Sie die Situation verbessern können. Vergleichen Sie die Antwort auf diese Frage mit der Antwort auf die Vorgängerfrage. 
+
+* Am Anfang jeden Semesters benötigen wir im Programmierpraktikum eine Zuordnung der Benutzerkennungen auf GitHub zu den entsprechenden Universitätskennungen. Wir verwenden dazu eine Webanwendung. Welches sind Ihrer Ansicht nach die wichtigsten Qualitätsziele (auf der genaueren Detailstufe der Ziele), die die Software erfüllen sollte? Begründen Sie die Wahl.
+
+* In dem Einführungsvideo wurde als Beispiel für Ziele, die im Widerspruch stehen, Zeitverhalten und Koexistenz genannt. Es gibt aber auch Ziele, die sich positiv aufeinander auswirken. Finden Sie ein Paar von Zielen, die sich positiv beeinflussen. Begründen Sie, warum das so ist. 
+
+* Die Definition von Authenticity ist "Degree to which the identity of a subject or resource can be proved to be the one claimed.". Überlegen Sie sich aus Ihrem Alltag im Umgang mit Webanwendungen, welche Möglichkeiten es gibt, um die Authenticity einer Webanwendung zu verbessern. 
+
+
+*Zusatzmaterial:*
+
+* Eine Sammlung von https://github.com/arc42/quality-requirements/releases/download/v0.7.6/index.pdf[Beispielen für Qualitätsanforderungen]
+
+* https://youtu.be/O3bO_3h0QtU[Dein Weg zu besseren Anforderungen], ein sehr lohnenswerter und unterhaltsamer Vortrag von Gernot Starke zum Thema Anforderungen und Qualität
+
+== Aufgabe 3: git
+
+Sie benötigen auf Ihrem Rechner git. Bitte installieren Sie das Werkzeug auf Ihrem Computer für Ihr Betriebssystem. Eine Installationsanleitung finden Sie zum Beispiel https://www.atlassian.com/git/tutorials/install-git[hier]. 
+
+Machen Sie sich mit den git Kommandos `clone`, `status`, `add`, `commit` und `push` vertraut. Dazu können
+Sie mein https://youtu.be/QKR541eSOVM[Einführungsvideo] verwenden und bei Bedarf auch die unten verlinkten Tutorialseiten zu den einzelnen Kommandos anschauen.
+
+NOTE: Wir werden git nicht so direkt verwenden, wie wir das in den vergangenen Jahren getan haben. Trotzdem ist es wichtig, dass Sie mit git umgehen können, da Versionskontrolle ein essenzieller Bestandteil jeder Softwareentwicklung ist. Wir verwenden in den praktischen Übungen ein Werkzeug, das auf git aufsetzt. 
+
+TIP: Sie sollten über kurz oder lang Ihre GitHub Zugangsdaten automatisch verwalten lassen, damit Sie diese nicht permanent eingeben müssen. Es gibt https://docs.github.com/en/github/getting-started-with-github/caching-your-github-credentials-in-git[hier] Anleitungen für verschiedene Betriebssysteme. 
+
+Obwohl git vollständig von der Kommandozeile bedient werden kann, verwenden viele Entwickler auch grafische Werkzeuge. Es gibt in den üblichen Java Entwicklungsumgebungen (Eclipse, IntelliJ, ...) bereits eingebaute Unterstützung für git, es gibt aber auch eine ganze Reihe von dedizierten Werkzeugen. Beispiele hierfür sind zum Beispiel die kostenfreien Werkzeuge https://www.gitkraken.com/[GitKraken], https://www.sourcetreeapp.com/[SourceTree] oder https://www.git-tower.com[Tower (Mac/Win)]. Auch GitHub bietet ein https://desktop.github.com/[graphisches Werkzeug] an.
+
+*Leitfragen/Aufgaben:*
+
+. Klonen Sie das Repository in dem diese Datei liegt und modifizieren Sie die Datei `README.adoc`
+auf Ihrem Rechner mit einem Texteditor. (https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-clone[git clone])
+. Prüfen Sie, dass git die Änderung erkannt hat. (https://www.atlassian.com/git/tutorials/inspecting-a-repository[git status])
+. Fügen Sie die Änderung in die Staging Area ein. (https://www.atlassian.com/git/tutorials/saving-changes[git add])
+. Comitten Sie die Änderung in Ihrem lokalen Repository. Sie können dazu das Kommando `git commit -m "Ein kurzer Text, der die Änderung beschreibt"` verwenden. (https://www.atlassian.com/git/tutorials/saving-changes/git-commit[git commit])
+. Pushen Sie Ihre Änderung nach GitHub und prüfen Sie, dass die Änderung dort sichtbar ist. (https://www.atlassian.com/git/tutorials/syncing/git-push[git push])
+
+*Zusatzmaterial:*
+
+* Am Ende des Semesters werden Sie in einem Wochenblatt die Aufgabe bekommen, folgende https://youtu.be/GvaBKzXmzfg[Vorlesungsaufzeichnung] zum Thema Git anzuschauen. Sie können das natürlich auch jetzt schon tun. Der Inhalt ist klausurrelevant.
+
+* Wenn Sie die Vorlesung angesehen haben, sollten Sie alle Level (Main und Remote) von https://learngitbranching.js.org/[Learn Git Branching] lösen.
+
+* Das Buch https://git-scm.com/book/en/v2[Pro Git] können Sie kostenfrei online lesen. 
+
+== Aufgabe 4: Remote Mob Programming
+
+Wir werden das ganze Semester hinweg in den praktischen Übungen mit dem Remote Mob Programming arbeiten.
+
+Hören Sie sich den Podcast zum Thema https://www.innoq.com/de/podcast/061-remote-mob-programming/[Remote Mob Programming] an oder lesen Sie alternativ das https://www.innoq.com/de/podcast/061-remote-mob-programming/transcript/[Transkript] zum Podcast. 
+
+Installieren Sie das https://github.com/remotemobprogramming/mob[mob] Werkzeug auf Ihrem Computer und probieren Sie es aus. 
+
+IMPORTANT: Sie müssen für die praktischen Übungen damit vertraut sein und es muss auf Ihrem Rechner funktionieren!
+
+*Leitfragen/Aufgaben:*
+
+* Das mob Werkzeug verwendet git, um den aktuellen Stand der Entwicklung im Team zu transferieren. Rekonstruieren Sie die git Befehle, die Sie verwenden müssten, um `mob next` von Hand durchzuführen. 
++
+TIP: Der Sourcecode des mob Tools ist zwar in der Programmiersprache Go geschrieben, es ist aber nicht sonderlich schwierig zu lesen.  
+
+
+*Zusatzmaterial:*
+
+* Die https://www.remotemobprogramming.org[Remote Mob Programming Webseite] gibt einen kompakten Überblick über das Remote Mob Programming.
+
+* Es gibt auch ein https://leanpub.com/remotemobprogramming[Booklet] zum Thema. Das Booklet können Sie kostenlos unter der URL bekommen. Sie können den Regler für den Preis auf 0 Euro ziehen. 
+
+* Das Remote Mob Programming ist aus dem normalen Mob Programming heraus entstanden. Es gibt dazu einen https://www.agilealliance.org/resources/sessions/mob-programming-aatc2017/[Vortrag] von Woody Zuill.
+
+
+== Java Upgrade
+
+Die Themen des Java Upgrades werden, sofern sie nicht im regulären Teil noch einmal vorkommen, nicht in der Klausur explizit abgefragt. Wir werden aber die Notationen und Inhalte, die in den Java Upgrades vorkommen in Beispielen, Übungen, praktischen Übungen und möglicherweise auch in Klausuraufgaben verwenden. 
+
+=== JShell
+
+Seit Java 9 gibt es die JShell, in der wir Java-Code einfach direkt auswerten können, ohne extra Klassen zu erstellen, zu kompilieren und dann das Java Programm zu starten. 
+
+Sie können die JShell mit dem Kommando `jshell` in der Eingabeaufforderung starten und dann direkt Java Code eintippen und ausführen. 
+
+Zum Beispiel können Sie `System.out.println("Hallo Propra")` eintippen und die JShell führt dann den Code aus. 
+
+Probieren Sie es aus. Starten Sie die JShell und führen Sie ein kleines Programm aus. Sie können auch einfach Methoden und sogar Klassen direkt in der JShell implementieren.
+
+IMPORTANT: Die JShell ist dazu gedacht schnell etwas Code auszuprobieren und mit Java zu experimentieren, nicht um darin ernsthaft zu programmieren. 
+
+=== Javadoc
+
+Für Klassen, die mit Java mitgeliefert werden, gibt es eine umfangreiche Dokumentation. Für Java 11 ist diese Dokumentation zum Beispiel bei https://docs.oracle.com/en/java/javase/11/docs/api/index.html[Oracle] verfügbar. Sie sollten für Klassen, die sie häufiger verwenden dort einmal hineinschauen, oft gibt es Methoden, die Ihnen die Arbeit deutlich erleichtern können.
+
+Versuchen Sie es gleich einmal und suchen Sie die Dokumentation der Klasse, die Sie vermutlich am häufigsten verwenden: `String`. 
+
+Sie können auch den Quellcode von Java Klassen (z.B. https://github.com/openjdk/jdk/blob/master/src/java.base/share/classes/java/lang/String.java[String]) im https://github.com/openjdk/jdk[OpenJDK] Projekt auf GitHub anschauen. 
+
+Die integrierten Entwicklungsumgebungen (Eclipse, IntelliJ IDEA, Netbeans, ...) bieten auch einen eingebauten Zugriff auf Dokumentation und Quellcode an. 
+
+NOTE: Wissen über die Klassen in Java ist ein wenig wie den Wortschatz der Sprache zu erlernen. Mit den Kenntnissen aus der Veranstaltung _Programmierung_ haben Sie einen Basiswortschatz erworben, aber um die Sprache zu meistern, müssen Sie sich einen größeren Wortschatz aneignen. 
+
+=== Literale
+
+Ein Literal ist ein Datenwert, den Sie in ein Programm schreiben können, ohne dass ein Konstruktoraufruf notwendig ist. Beispiele für Literale sind Werte wie `5`, `'\n'`, `true`, `3.14` oder `"Foo"`.
+
+Es gibt Literale für primitive Datentypen wie ganze Zahlen (`byte`, `short`, `int` und `long`), Fließkommazahlen (`float` und `double`) und Zeichen (`char`) sowie Wahrheitswerte (`boolean`). Etwas ungewöhnlicher sind String Literale, da diese ja tatsächlich Referenztypen sind. 
+
+NOTE: Die Typen `byte` und `short` können vorzeichenbehaftete 8 bzw. 16 Bit Zahlen speichern. Der Unterschied zwischen `double` und `float` ist, dass `float` eine geringere Präzision hat. Alle drei Typen werden sehr selten verwendet, wenn beispielsweise unbedingt Speicherplatz eingespart werden muss. 
+
+Probieren Sie einmal in der JShell aus, was passiert:
+
+[source, java]
+----
+byte b = -128;
+byte b = 255;
+byte b = -129;
+byte b = 256;
+
+short s = -32768
+short s = 32767
+short s = -32769
+short s = 32768
+
+float f = 0.0
+float f = 3.6
+----
+
+Die Fehlermeldungen geben einen Hinweis darauf, was tatsächlich unter der Haube vorgeht. Die Zahlliterale selber werden als `int` bzw. `double` eingelesen und dann versucht in den Zieldatentyp zu schreiben. Ohne weiteres funktioniert das nur, wenn der Compiler sicher sein kann, dass die Zahl in den Datentyp passt. Das funktioniert nur in sehr einfachen Fällen, ansonsten müssen wir explizit einen Typecast durchführen. Schauen wir uns das an einem Beispiel an:
+
+[source, java]
+----
+byte sinnlos(byte b) { 
+    return 1 * b;
+}
+----
+
+Der Code compiliert nicht, obwohl hier offensichtlich keine Probleme auftauchen können, aber der Compiler kann das nicht identifizieren. Wenn wir sicher sind, dass das Ergebnis in den Zieldatentyp passt, oder es für uns egal ist, dann können wir die Methode mit einem Typecast versehen:
+
+[source, java]
+----
+byte sinnlos(byte b) { 
+    return (byte) (1 * b);
+}
+----
+
+Die Klammerung des Ausdrucks `1 * b` ist notwendig, da der Typecast `(byte)` stärker bindet als die Multiplikation. 
+
+IMPORTANT: Verwenden Sie Typecasts mit Vorsicht. Sie geben damit dem Compiler die Anweisung eine nicht sichere Umwandlung zu ignorieren. Im Fall von Zahlen können Sie damit Overflows produzieren, bei Referenztypen bekommen Sie damit zur Laufzeit eine Exception, die das Programm zum Absturz bringen kann. 
+
+Hier ist ein Beispiel für einen Overflow: 
+
+[source, java]
+----
+byte danger(byte b) { 
+    return (byte) (10 * b);
+}
+byte b = (byte) 13;
+danger(b);
+----
+
+Hier ist ein Beispiel für eine Exception
+
+[source, java]
+----
+Object o = Long.valueOf("10");
+String s = (String) o;
+----
+
+*long Literale*
+
+Ein Problem, das durch die Verwendung von `int` als Typ für Zahlen entsteht, ist, dass wir keine `long` Werte definieren könnten, die größer sind als der Maximalwert, der in den `int` Typ passt. Hier kommen wir nicht einmal mit einem Typecast weiter.
+
+[source, java]
+----
+long v = 2147483647
+long v = 2147483648
+long v = (long) 2147483648
+----
+
+Um das Problem zu umgehen, können wir ein `long` Literal verwenden, indem wir an die Zahl ein `L` anhängen.
+
+IMPORTANT: Theoretisch könnten wir auch den Kleinbuchstaben verwenden. Da `l` aber einfach mit der Zahl `1` verwechselt werden kann, ist das nicht empfehlenswert.
+
+[source, java]
+----
+long v = 2147483648L
+----
+
+NOTE: Für Fließkommazahlen gibt es sowohl `double`, als auch `float` Literale, die mit `d` bzw. `f` enden. 
++
+[source, java]
+----
+float f = 3.6f
+double d = 3.6 // Standardverhalten bei Fließkommazahlen
+double d = 3.6d // explizite Angabe als double
+double d = 3.6f // Verstehen Sie, was hier passiert?
+----
+
+*Andere Zahlensysteme*
+
+Bei ganzen Zahlen gibt es einige interessante Schreibweisen. Neben der normalen Darstellung als Dezimalzahl können wir Zahlen auch in Oktal-, Hexadezimal- und Binärdarstellung notieren. 
+
+[source, java]
+----
+int a = 30; // dezimal
+int b = 0x1e; // hexadezimal
+int c = 036; // oktal
+int d = 0b11110 // binär
+----
+
+WARNING: Bei Oktalzahlen ist etwas Vorsicht geboten, da wir führende Nullen üblicherweise ignorieren, in Java aber damit eine Oktalzahl notiert wird.
+
+[source, java]
+----
+if (036 == 30) System.out.println("ja"); else System.out.println("nein"); 
+if (010 == 10) System.out.println("ja"); else System.out.println("nein"); 
+int n = 09; 
+----
+
+*Underscore*
+
+Wir können in Zahl-Literale (auch bei double Werten) auch Underscores (`_`) einfügen, die ignoriert werden. Damit können Zahlen besser lesbar notiert werden.
+
+[source, java]
+----
+int n = 10_000_000; // identisch mit 10000000
+----
+
+=== Primitives, Objekte und (Un)Boxing
+
+Zu jedem primitiven Datentyp gibt es auch immer einen Objekttyp. 
+
+[cols="2,3"]
+|===
+|Primitiver Datentyp | Korrespondierender Referenztyp 
+
+|byte
+|java.lang.Byte
+
+|short
+|java.lang.Short
+
+|int
+|java.lang.Integer
+
+|float
+|java.lang.Float
+
+|double
+|java.lang.Double
+
+|char
+|java.lang.Character
+
+|boolean
+|java.lang.Boolean
+|===
+
+Die Referenztypen speichern intern den primitiven Wert und stellen Methoden (z.B. `Integer.parseInt("-3")`) und Konstanten (z.B. `Long.MAX_VALUE`) zur Verfügung. Gelegentlich wird auch von einer Wrapperklasse gesprochen, da der primitive Datentyp in einem normalen Objekt verpackt wird.
+
+Seit Java 5 kann Java die primitiven Datentypen automatisch in den korrespondierenden Wrapper verpacken (auto boxing) und auch wieder auspacken (auto unboxing). 
+
+[source, java]
+----
+int a = 5;
+Integer b = a; 
+Integer c = 42;
+int d = c;
+Integer e = b * c; 
+----
+
+Bei den Variablen `b` und `c`sehen wir, dass die `int` Werte `a` und `42` automatisch in ein `Integer` Objekt verpackt werden, ohne dass wir, wie sonst üblich, einen Konstruktor aufrufen. In Zeile 4 sehen wir, dass der Wert, der in dem Wrapper `c` gespeichert ist automatisch ausgepackt wird. 
+
+Da die Operation `*` nur für primitive Zahlentypen definiert ist, werden bei der Definition von `e` die Wrapper `b` und `c` ausgepackt, multipliziert, und das Ergebnis der Multiplikation wird wieder in einen Wrapper verpackt. 
+
+*Fallstricke*
+
+Auto(un)boxing ist extrem bequem, aber es gibt einige Dinge, die wir beachten sollten.
+
+* Die Umwandlung ist nicht ganz kostenlos. Wenn wir also *sehr* große Datenmengen *sehr schnell* verarbeiten müssen, sollten wir darauf achten (Un)Boxing zu vermeiden. *Im Normalfall ist das aber kein Problem!*
+
+* Die Wrapper sind Referenzdatentypen. Wir müssen also bei Vergleichen von zwei Wrapper-Instanzen `.equals` statt `==` verwenden. 
+
+IMPORTANT: Verwenden Sie für Referenzdatentypen *immer* die `equals` Methode zum Vergleich.
+Manchmal funktioniert `==` bei Strings oder kleinen Zahlen zwar, *trotzdem* sollten Sie es vermeiden, weil es sehr unangenehme Bugs zur Folge haben kann.  
+
+[source, java]
+----
+Integer a = 127;
+Integer a = 127;
+System.out.println(a == b);
+System.out.println(a.equals(b));
+
+Integer a = 128;
+Integer a = 128;
+System.out.println(a == b);
+System.out.println(a.equals(b));
+----
+
+=== Der ternäre Operator
+
+Stellen wir uns vor, wir wollen der Variable `x` den Wert 42 zuweisen, wenn in der Variablen `y` ein leerer String steht, ansonsten die Länge des Strings. Wir können das mit einer `if-then-else` *Anweisung* lösen:
+
+[source, java]
+----
+int x = 0;
+if (y.isEmpty()) { 
+    x = 42;
+} else {
+    x = y.length();
+}
+----
+
+Es gibt aber als Alternative auch den ternären (lat. "aus drei Grundeinheiten bestehend") Operator. Es handelt sich dabei um einen Ausdruck, der wie `if-then-else` funktioniert, aber eben ein Ausdruck ist, der einen Wert hat und keine Anweisung, die keinen Wert hat. Der Ausdruck besteht aus einem boolschen Ausdruck _test_, einem Wert _then_ und einen Wert _else_. Der Ausdruck hat den Wert _then_, falls _test_ den Wert `true` hat, ansonsten ist der Wert des Ausdrucks _else_. Die Syntax ist `test ? then : else`. Unser Beispiel kann also so geschrieben werden:
+
+[source, java]
+----
+int x = y.isEmpty() ? 42 : y.length();
+----
+ 
