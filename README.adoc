@@ -1,16 +1,18 @@
-Machen wa mal was mit Überschrifften
+= Machen wa mal was mit Überschrifften
 
 :icons: font
 :icon-set: fa
+:source-highlighter: rouge
 ifdef::env-github[]
-:bulb:
-:information_source:
-:heavy_exclamation_mark:
-:fire:
-:warning:
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
 endif::[]
+:experimental:
 
-_Hier ist der erste Abschnitt:_
+== Hier ist der erste Abschnitt:
 
 Im ersten Abschnitt steht nicht viel, da mit leider nicht viel einfällt
 naja, kann man nix machen oder
@@ -19,14 +21,14 @@ naja, kann man nix machen oder
 Auch hier bin ich zu faul mir irgendwas auszudenken, also lass mich
 
 
-_Zweiter Abschnitt_
+== Zweiter Abschnitt
 
 Auch für den zweiten Abschnitt gibts nix Neues oder Kreatives. Dumm gelaufen
 
 *Zwischenabschnitt vom zweiten Abschnitt*
 Jap, same here
 
-*Zum Abschluss noch eine kleine Aufzählung*
+*Zum Abschluss noch eine kleine Aufzählung: *
 * 1. Was mach ich hier
 * 2. Warum mach ich das hier
 * 3. Dritter Finger
