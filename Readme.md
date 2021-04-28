@@ -24,8 +24,8 @@ Jap, same here
 
 *Zum Abschluss noch eine kleine Aufzählung:*
 
-* 1. Was mach ich hier
-* 2. Warum mach ich das hier
-* 3. Dritter Finger
-    * 3. kleiner Teil vom dritten Finger 
-    * 3. anderer Teil vom Finter
+*  Was mach ich hier
+*  Warum mach ich das hier
+*  Dritter Finger
+    *  kleiner Teil vom dritten Finger 
+    *  anderer Teil vom Finter
