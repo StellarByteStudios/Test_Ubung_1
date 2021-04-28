@@ -14,7 +14,7 @@ endif::[]
 
 == Hier ist der erste Abschnitt:
 
-Im ersten Abschnitt steht nicht viel, da mit leider nicht viel einfällt
+Im ersten Abschnitt steht nicht viel, da mir leider nicht viel einfällt
 naja, kann man nix machen oder
 
 *Zwischenabschnitt vom ersten Abschnitt*
